@@ -1,0 +1,23 @@
+id = "vscode-2026-dark"
+name = "VSCode 2026 Dark"
+version = "0.0.1"
+schema_version = 1
+description = "VSCode 2026 Dark Theme for Zed — deep dark colors with muted accent, converted from Visual Studio Code's 2026 Dark theme"
+repository = "https://github.com/iamsanjid/vscode-2026-dark.zed"
+authors = ["IamSanjid"]
+themes = ["themes/vscode-2026-dark.json"]
+icon_themes = []
+languages = []
+capabilities = []
+
+[lib]
+
+[grammars]
+
+[language_servers]
+
+[context_servers]
+
+[agent_servers]
+
+[slash_commands]
