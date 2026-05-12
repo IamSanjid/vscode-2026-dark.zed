@@ -8,23 +8,21 @@ A deep, low-contrast dark theme for [Zed](https://zed.dev), converted from Visua
 
 ## Installation
 
+Clone/Download this repo.
+
 1. Open Zed.
 2. Open the command palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run **zed: extensions**.
-3. Search for **VSCode 2026 Dark** and click **Install**.
+3. `Install Dev Extension` select the cloned/downloaded foler.
 4. Open the theme selector (`Ctrl+K Ctrl+T` / `Cmd+K Cmd+T`) and pick **Dark 2026 (VS Code)**.
 
-Or install via the CLI:
-
-```
-zed:install vscode-2026-dark
-```
+Disclaimer: Haven't published the extension yet, so you can't find this from the Zed's extension repo.
 
 ## MISC
 
 For full VS Code-like highlighting, add these to your `settings.json`:
 
 - For Zed to pick up richer token information from language servers. Set:
-```json
+```jsonc
 "languages": {
   "<language>": {
     "semantic_tokens": "combined",
@@ -34,12 +32,13 @@ For full VS Code-like highlighting, add these to your `settings.json`:
 
 - Highlight function parameters in the body using the same style as VS Code:
 
-```json
+```jsonc
 "global_lsp_settings": {
   "semantic_token_rules": [
-    { "token_type": "parameter", "style": ["variable.parameter"] }
-  ]
-}
+    { "token_type": "parameter", "style": ["variable.parameter"] },
+    { "token_type": "errorTag", "style": ["variable.parameter"] },
+  ],
+},
 ```
 
 ## License
